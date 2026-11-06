@@ -1,4 +1,4 @@
-# GenAI Conversational AI Platform — Foundation
+# GenAI Conversational AI Platform 
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-009688.svg)](https://fastapi.tiangolo.com/)
