@@ -1,0 +1,24 @@
+[
+  {
+    "id": "tc-001",
+    "query": "What is the primary LLM generation runtime used in Phase 1?",
+    "expected_keywords": ["Ollama", "qwen2.5:7b", "local"],
+    "ground_truth_answer": "Phase 1 uses Ollama as the local LLM runtime with qwen2.5:7b as the default generation model.",
+    "expected_sources": ["architecture.txt"]
+  },
+  {
+    "id": "tc-002",
+    "query": "How is knowledge stored and retrieved in the platform?",
+    "expected_keywords": ["ChromaDB", "persistent", "nomic-embed-text", "embeddings"],
+    "ground_truth_answer": "Knowledge is vectorized using nomic-embed-text embeddings and stored in ChromaDB with persistent local storage.",
+    "expected_sources": ["architecture.txt"]
+  },
+  {
+    "id": "tc-003",
+    "query": "What are the quantum physics equations for dark matter warp drives?",
+    "expected_keywords": ["sufficient information", "not found"],
+    "ground_truth_answer": "Insufficient information in knowledge base; fallback expected.",
+    "expected_sources": []
+  }
+]
+

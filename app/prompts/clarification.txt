@@ -1,0 +1,15 @@
+The user query is ambiguous, lacks critical context, or could refer to multiple distinct topics.
+
+=== USER QUERY ===
+{query}
+==================
+
+=== RETRIEVED CANDIDATES ===
+{context}
+============================
+
+INSTRUCTIONS:
+1. Politely explain why the request is ambiguous or what key detail is required.
+2. Offer 2 to 3 specific interpretations or clarification options based on the available topics.
+3. Invite the user to choose or provide the missing context. Keep the tone concise and helpful.
+

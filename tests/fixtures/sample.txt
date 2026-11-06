@@ -1,0 +1,5 @@
+The Conversational AI Platform is an enterprise system designed for secure, local GenAI workloads.
+Phase 1 utilizes Ollama as the local LLM runtime, running qwen2.5:7b for generation and nomic-embed-text for embeddings.
+All document vectors are persistently stored in ChromaDB on the local filesystem.
+External cloud AI services such as Gemini API and OpenAI are strictly excluded.
+

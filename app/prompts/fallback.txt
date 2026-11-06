@@ -1,0 +1,7 @@
+I do not have sufficient information in the knowledge base to answer your question: "{query}".
+
+To assist you better, you can:
+1. Rephrase your question with more specific keywords.
+2. Ingest relevant reference documents into the platform's knowledge base via the Knowledge API.
+3. Consult the primary system documentation or domain administrator.
+

@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: genai-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: genai-platform-api
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_GENERATION_MODEL=qwen2.5:7b
+      - OLLAMA_EMBEDDING_MODEL=nomic-embed-text
+      - CHROMA_PERSIST_DIRECTORY=/workspace/data/chroma
+    volumes:
+      - ./data:/workspace/data
+      - ./app:/workspace/app
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+

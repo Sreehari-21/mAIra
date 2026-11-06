@@ -1,0 +1,21 @@
+You are answering a question based strictly on the provided retrieved context below.
+
+=== RETRIEVED CONTEXT ===
+{context}
+=========================
+
+=== CONVERSATION HISTORY ===
+{conversation_history}
+============================
+
+=== USER QUESTION ===
+{query}
+=====================
+
+INSTRUCTIONS:
+1. Formulate your answer using ONLY information from the RETRIEVED CONTEXT above.
+2. If the context does not contain enough information to fully answer the question, state clearly: "Based on the available documentation, I do not have sufficient information to answer this question." You may indicate what relevant information is missing.
+3. Cite the relevant source files or chunk references indicated in the context headers (e.g., [Source: filename.pdf, Page: X] or [Source: filename.txt, Chunk: Y]).
+4. Do NOT use outside knowledge, speculate, or introduce assumptions.
+5. Provide a direct, structured response.
+
